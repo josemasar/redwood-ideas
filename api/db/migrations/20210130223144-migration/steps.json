@@ -1,0 +1,24 @@
+{
+  "version": "0.3.14-fixed",
+  "steps": [
+    {
+      "tag": "CreateField",
+      "model": "Idea",
+      "field": "readyInMonth",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Idea",
+      "field": "readyInYear",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "Idea",
+      "field": "implementDate"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "version": "0.3.14-fixed",
+  "steps": [
+    {
+      "tag": "CreateField",
+      "model": "Ideas",
+      "field": "active",
+      "type": "Boolean",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Ideas",
+          "field": "active"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Ideas",
+          "field": "active"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "false"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Ideas",
+      "field": "implementDate",
+      "type": "DateTime",
+      "arity": "Required"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "Ideas",
+      "field": "Active"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "Ideas",
+      "field": "ImplementDate"
+    }
+  ]
+}
