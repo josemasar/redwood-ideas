@@ -1,13 +1,20 @@
 import { BarChart, CartesianGrid, XAxis, YAxis, Tooltip, Legend, Bar } from 'recharts'
-import { Success } from 'src/components/IdeasListCell/IdeasListCell'
 
+const BarChartIdeas = (props) => {
 
-const BarChartIdeas = () => {
+  console.log(props)
+
   return(
-    <>
-    <p>Hello!</p>
-    </>
+    <BarChart width={730} height={250} data={ props.data }>
+      <CartesianGrid strokeDasharray="3 3" />
+      <XAxis dataKey="readyInYear" />
+      <YAxis />
+      <Tooltip />
+      <Legend />
+      <Bar dataKey="value" fill="#8884d8" />
+    </BarChart>
   )
 }
 
 export default BarChartIdeas
+
