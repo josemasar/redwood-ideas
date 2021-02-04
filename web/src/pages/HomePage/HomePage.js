@@ -1,15 +1,20 @@
 import AppLayout from 'src/layouts/AppLayout'
-import BarChartIdeas from 'src/components/BarChartIdeas'
 import IdeasListCell from 'src/components/IdeasListCell'
-import IdeasLayout from 'src/layouts/AppLayout/AppLayout'
+
 
 const HomePage = () => {
   return (
     <>
       <AppLayout>
-      <h1>Thinking on costs</h1>
-      <h2>What ideas your organisation has to reduce the cost of your products?</h2>
-      <IdeasListCell />
+      <div className="inline-flex bg-gray-100 ">
+      <div className="flex flex-col ml-5 p-5 mt-4 justify-center">
+        <h1 className="flex-1 text-3xl font-bold">Thinking on costs</h1>
+        <h2 className="flex-1 text-xl">What ideas your organisation has to reduce the cost of your products?</h2>
+      </div>
+      <div className="flex mt-4 p-5">
+        <IdeasListCell />
+      </div>
+      </div>
       </AppLayout>
     </>
   )
